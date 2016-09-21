@@ -1,0 +1,66 @@
+Variáveis:
+  lista[x]:decimal;
+  x:inteiro;
+  i:inteiro;
+  total: decimal;
+
+//recebe uma lista de itens e retorna o mais caro
+  função mais_caro(lista[]:decimal, total_itens:inteiro): decimal
+    Variáveis:
+      maiscaro=lista[1]:decimal;
+    Inicio:
+      para x=2 até x=total_itens passo 1:
+        se maiscaro < lista[x]
+          então maiscaro=lista[x];
+        fim_se
+      fim_para
+      retorne maiscaro;
+  fim_função
+
+//recebe o produto mais caro e devolve o preço com 10% de desconto
+  função desconto_10(item: decimal):decimal
+    Variáveis:
+
+    Inicio:
+      item = item - (item*0,1);
+      retorne item;
+  fim_função
+
+//troca o item mais caro pelo valor com desconto;
+  procedimento troca_valor(item: decimal, lista[]:decimal, total_itens:inteiro)
+    Variáveis:
+      i: inteiro;
+    Inicio:
+      para i=1 até i=total_itens passo 1
+        se lista[i] == item
+          então lista[i]=desconto_10(item);
+        fim_se
+      fim_para
+  fim_função
+
+//soma todos os itens e devolve o valor total com desconto de 20%
+  função desconto_20(lista[]:decimal, total_itens:inteiro)
+    Variáveis:
+      total=0:decimal;
+    Inicio:
+      para x=1 até x=total_itens passo 1:
+        total += lista[x];
+      fim_para
+      total = total - (total*0,2);
+      retorne total;
+  fim_função
+
+Inicio:
+  saída("Digite o total de ítens:");
+  entrada(x);
+  para i=1 até i=x passo 1
+    saída("valor do i º:", i);
+    entrada(lista[i]);
+  fim_para
+
+  a = mais_caro(lista[], x);
+  troca_valor(a, lista[], x);
+  total =desconto_20(lista[],x);
+
+  saída("O total com descontos é total", total);
+Fim

@@ -1,0 +1,21 @@
+//Algorítimo Jogo de Advinhação
+
+Variáveis:
+  secreto, palpite: Inteiro;
+Início:
+  SAIDA("Bem-vindo ao jogo de advinhação");
+  secreto = NUMERO_ALEATORIO(1, 10);
+  palpite = -1;
+  SAIDA("Su objetivo é acertar o número secreto");
+  ENQUANTO palpite != secreto FAÇA
+    SAIDA("Faça um palpite ente 1 e 10");
+    ENTRADA(palpite);
+    SE  palpite > secreto ENTÃO:
+      SAIDA ("o número secreto é menor!");
+    FIM_SE
+    SE palpite < secreto ENTÃO:
+      SAIDA ("o número secreto é maior!");
+    FIM_SE
+  FIM_ENQUANTO
+  SAÍDA("Parabéns, você acertou!");
+Fim

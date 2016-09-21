@@ -1,0 +1,15 @@
+1 - Classe "String"(java.lang.String):
+  A classe "String" representa uma cadeia de caracteres. Toda string literal em
+  um programa java (ex: "abc"), são implementados por instâncias dessa classe.
+
+2 - Classe "System"(java.lang.System):
+  A classe "System" contém atributos de classes e métodos extremamente importantes.
+  Essa classe não pode ser instanciada, para acessá-la somente através de seus metódos
+  e atributos estáticos.
+  Algumas das facilidades promovidas pelo "System" são as entradas e saídas padrões;
+  saída padrão de erro; acesso à propriedades do sistema e variáveis de ambiente;
+
+3 - Classe "Arraylist" (java.util.ArrayList<E>):
+  Impletamenteção da interface List(java.util.List) que realiza um vetor de tamanho
+  variável. Implementa todas as opções de listas. Essa possibilita métodos de
+  manipular o tamanho do vetor utilizado.

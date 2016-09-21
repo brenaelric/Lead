@@ -1,0 +1,32 @@
+Algorítimo jogo_espaço
+Variáveis:
+  espaconave:
+  jogador: texto;
+  nivel: caractere;
+  vida = 100: inteiro;
+  combustivel = 100: inteiro;
+  tempo = 180: inteiro;
+  pontuacao=0: inteiro;
+  lasers: inteiro;
+  escudo = 0: lógico;
+  vidainimigo: inteiro;
+  ataquenimigo: inteiro;
+Inicio:
+  SAIDA("Seu nome: ")
+  ENTRADA(jogador)
+  SAIDA("Escolha o nivel do jogo:")
+  SAIDA("d - Difícil")
+  SAIDA("m - Médio")
+  SAIDA("f - Fácil")
+
+  se espaconave == ataqueinimigo
+    vida--
+  se escudo == 1
+    combustivel--;
+  se vidainimigo == 0
+    pontuacao +=50;
+  tempo--
+  se vida==0 || combustivel ==0 || tempo ==0
+    jogador = morre;
+    SAIDA("Você morreu!")
+Fim

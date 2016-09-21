@@ -1,0 +1,20 @@
+Variaveis:
+  precoprod: decimal;
+  desconto: decimal;
+  preconovo: decimal
+Inicio:
+  SAIDA("Preço do produto: ");
+  ENTRADA(precoprod);
+  se precoprod < 40,00 então
+    desconto=0;
+  fim_se
+  se precoprod >= 40,00 && precoprod <= 200,00 então
+    desconto= 0,2;
+  fim_se
+  se precoprod > 200,00 então
+    desconto= 0,25;
+  fim_se
+
+  preconovo = precoprod - (precoprod * desconto);
+  SAIDA("O preço com desconto é %d", preconovo);
+fim
