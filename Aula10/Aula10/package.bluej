@@ -1,0 +1,24 @@
+#BlueJ package file
+objectbench.height=76
+objectbench.width=668
+package.editor.height=400
+package.editor.width=560
+package.editor.x=50
+package.editor.y=50
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=true
+project.charset=windows-1252
+target1.height=62
+target1.name=recursoshumanos
+target1.type=PackageTarget
+target1.width=130
+target1.x=10
+target1.y=90
+target2.height=62
+target2.name=produtos
+target2.type=PackageTarget
+target2.width=80
+target2.x=140
+target2.y=10
